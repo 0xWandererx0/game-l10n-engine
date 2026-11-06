@@ -1,4 +1,9 @@
 # Game L10n Engine (L10nShield)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Tested with](https://img.shields.io/badge/tested%20with-pytest-0A9EDC?logo=pytest&logoColor=white)
+![GUI](https://img.shields.io/badge/GUI-Tkinter-orange)
+![Engine](https://img.shields.io/badge/Engine-Asura-red)
 
 İkili (binary) oyun arşiv dosyalarını ayrıştıran, çoklu LLM sağlayıcıları (Gemini, Claude, Ollama) ile bağlamsal ve toplu (batch) olarak yerelleştiren, ardından tekrar oyun motoruna uygun formatta paketleyen modüler çeviri platformu.
 
