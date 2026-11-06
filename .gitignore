@@ -1,0 +1,25 @@
+# Python önbellek ve derleme dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Sanal ortamlar
+venv/
+.venv/
+
+# Editör ayarları
+.vscode/
+
+# Gizli anahtarlar ve ortam değişkenleri
+.env
+.env.*
+!.env.example
+
+# Çeviri çıktıları ve geçici klasörler
+output/
+temp/
+
+# Oyun arşiv dosyaları
+*.asr
+*.gxt

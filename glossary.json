@@ -1,0 +1,161 @@
+{
+  "_meta": {
+    "description": "Oyun argosu ve evren sözlüğü. 'terms' içindeki her girdi, kaynak metinde geçtiği batch'e zorunlu kural olarak eklenir. 'do_not_translate' listesi aynen korunur. 'style_rules' sistem promptuna eklenir.",
+    "version": 1,
+    "source_lang": "en",
+    "target_lang": "tr"
+  },
+  "style_rules": [
+    "Oyuncuya 'sen' diye hitap et. 'Siz' yalnızca karakterin sesi gerektirdiğinde (asil, hizmetkâr, resmî yetkili) ya da bir gruba seslenildiğinde kullanılır.",
+    "Arayüz düğmeleri ve menü öğeleri kısa emir kipinde ve her kelimesi büyük harfle başlar: 'Yeni Oyun', 'Devam Et', 'Masaüstüne Dön'.",
+    "Sayılardan sonra isim tekil kalır: '3 coins' -> '3 altın', '{0} enemies' -> '[TAG_0] düşman'.",
+    "Düz metindeki yüzdelerde işaret sayıdan önce gelir: '50%' -> '%50'. Bir etiketin ([TAG_n]) yanına asla kendin '%' ekleme; sayı bir etiketin içindeyse 'yüzde [TAG_0]' yaz.",
+    "Türkçe büyük/küçük harf kuralları: i -> İ, ı -> I. Kaynak TAMAMI BÜYÜK HARF ise çeviri de TAMAMI BÜYÜK HARF olur ('LEVEL UP!' -> 'SEVİYE ATLADIN!').",
+    "Türkçe karakterleri (ç, ğ, ı, İ, ö, ş, ü) asla ASCII'ye indirgeme.",
+    "Kısaltma ve birimler Türkçe karşılığıyla yazılır: 's' / 'sec' -> 'sn', 'min' -> 'dk', 'm' -> 'm', 'kg' -> 'kg'."
+  ],
+  "do_not_translate": [
+    "GG",
+    "AFK",
+    "DLC",
+    "HUD",
+    "Steam",
+    "PlayStation",
+    "Xbox",
+    "Nintendo Switch",
+    "Discord",
+    "Twitch"
+  ],
+  "terms": [
+    {
+      "source": "Fire in the hole",
+      "target": "Siper alın!",
+      "note": "Patlayıcı/el bombası uyarısı. Asla 'Delikteki ateş'. Uzun biçim: 'Bomba geliyor, siper alın!'"
+    },
+    {
+      "source": "Roger that",
+      "target": "Anlaşıldı.",
+      "note": "Telsiz onayı. Laubali karakterlerde 'Tamamdır.' Soru olarak ('Roger that?') -> 'Anlaşıldı mı?'"
+    },
+    {
+      "source": "Cover me",
+      "target": "Beni koruyun!",
+      "note": "Ateş desteği isteği. Asla 'Beni ört'. Tek kişiye hitapta 'Beni koru!'"
+    },
+    {
+      "source": "Reloading",
+      "target": "Şarjör değiştiriyorum!",
+      "note": "Asker repliği. Arayüzdeki 'Reload' eylemi için 'Şarjör Değiştir'."
+    },
+    {
+      "source": "Enemy down",
+      "target": "Düşman etkisiz!",
+      "note": "Telsiz bildirisi; 'Düşman aşağıda' değil."
+    },
+    {
+      "source": "Hold the line",
+      "target": "Mevzileri koruyun!",
+      "note": "Savunma emri; 'Hattı tutun' kelime kelime çeviridir, kullanma."
+    },
+    {
+      "source": "Piece of cake",
+      "target": "Çocuk oyuncağı",
+      "note": "Deyim; asla 'kek parçası'."
+    },
+    {
+      "source": "Loot",
+      "target": "ganimet",
+      "note": "İsim. Fiil hali bağlama göre 'ganimet toplamak' ya da 'yağmalamak'. Arayüzde 'Ganimet'."
+    },
+    {
+      "source": "Cooldown",
+      "target": "bekleme süresi",
+      "note": "Yetenek bekleme süresi. Dar arayüz alanında yalnızca 'Bekleme'."
+    },
+    {
+      "source": "Spawn",
+      "target": "doğmak",
+      "note": "'Spawn point' -> 'doğma noktası'. Düşmanlar için 'ortaya çıkmak' daha doğaldır."
+    },
+    {
+      "source": "Respawn",
+      "target": "yeniden doğmak",
+      "note": "Düğme: 'Yeniden Doğ'. İsim: 'yeniden doğma'."
+    },
+    {
+      "source": "Buff",
+      "target": "güçlendirme",
+      "note": "Olumlu etki ya da denge güncellemesi. Fiil: 'güçlendirmek' ('X güçlendirildi')."
+    },
+    {
+      "source": "Debuff",
+      "target": "olumsuz etki",
+      "note": "Karakter üzerindeki olumsuz durum etkisi."
+    },
+    {
+      "source": "Nerf",
+      "target": "zayıflatma",
+      "note": "Denge güncellemesi. Fiil: 'zayıflatmak' ('X zayıflatıldı')."
+    },
+    {
+      "source": "Headshot",
+      "target": "kafadan vuruş",
+      "note": "Bildirimde 'Kafadan vuruş!'"
+    },
+    {
+      "source": "Boss",
+      "target": "boss",
+      "note": "Türk oyuncu kitlesinde yerleşik terim; asla 'patron'. Tamlama: 'boss savaşı'."
+    },
+    {
+      "source": "Quest",
+      "target": "görev",
+      "note": "'Side quest' -> 'yan görev', 'Main quest' -> 'ana görev'."
+    },
+    {
+      "source": "Checkpoint",
+      "target": "kontrol noktası",
+      "note": "'Checkpoint reached' -> 'Kontrol noktasına ulaşıldı'."
+    },
+    {
+      "source": "Level up",
+      "target": "Seviye atladın!",
+      "note": "Bildirim. İsim olarak 'seviye atlama'."
+    },
+    {
+      "source": "Achievement unlocked",
+      "target": "Başarım kazanıldı",
+      "note": "Steam Türkçe terminolojisi: 'başarım'."
+    },
+    {
+      "source": "Friendly fire",
+      "target": "dost ateşi",
+      "note": "Askerî terim."
+    },
+    {
+      "source": "Ammo",
+      "target": "mermi",
+      "note": "Arayüzde 'Mermi'."
+    },
+    {
+      "source": "Health",
+      "target": "can",
+      "note": "Oyun değeri olarak 'can' ('Can: 50/100'). Tıbbi bağlamda 'sağlık'."
+    },
+    {
+      "source": "Crafting",
+      "target": "üretim",
+      "note": "'Crafting table' -> 'üretim masası'. Fiil: 'üretmek'."
+    },
+    {
+      "source": "Skill tree",
+      "target": "yetenek ağacı",
+      "note": ""
+    },
+    {
+      "source": "Game Over",
+      "target": "Oyun Bitti",
+      "note": ""
+    }
+  ]
+}

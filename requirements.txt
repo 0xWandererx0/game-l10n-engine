@@ -1,0 +1,6 @@
+# Gemini (ücretsiz test) sağlayıcısı
+google-genai>=2.0
+# Claude (final yama) sağlayıcısı
+anthropic>=2.0
+# Testler
+pytest>=8.0
